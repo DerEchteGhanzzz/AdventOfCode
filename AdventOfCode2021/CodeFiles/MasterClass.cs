@@ -11,17 +11,20 @@ namespace AdventOfCode
     {
         static void Main(string[] args)
         {
-            bool WriteOutput = true;
+            bool WriteOutput = false;
 
             List<string> output = new List<string>();
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
             
-            output.Add("Day 0 A: " + Day_0.solution_A);
-            output.Add("Day 0 B: " + Day_0.solution_B);
+            // output.Add("Day 0 A: " + Day_0.solution_A);
+            // output.Add("Day 0 B: " + Day_0.solution_B);
+            //
+            // output.Add("Day 1 A: " + Day_1.solution_A);
+            // output.Add("Day 1 B: " + Day_1.solution_B);
             
-            output.Add("Day 1 A: " + Day_1.solution_A);
-            output.Add("Day 1 B: " + Day_1.solution_B);
+            output.Add("Day 2 A: " + Day_2.solution_A);
+            output.Add("Day 2 B: " + Day_2.solution_B);
             
             stopWatch.Stop();
             output.Add("ms: " + stopWatch.Elapsed.TotalMilliseconds);
