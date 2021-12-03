@@ -26,6 +26,9 @@ namespace AdventOfCode
             output.Add("Day 2 A: " + Day_2.solution_A);
             output.Add("Day 2 B: " + Day_2.solution_B);
             
+            output.Add("Day 3 A: " + Day_3.solution_A);
+            output.Add("Day 3 B: " + Day_3.solution_B);
+            
             stopWatch.Stop();
             output.Add("ms: " + stopWatch.Elapsed.TotalMilliseconds);
 
