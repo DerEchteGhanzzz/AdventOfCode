@@ -44,7 +44,7 @@ namespace AdventOfCode
             int O2 = FindRatings(lines_list, 0, gamma_and_epsilon, 1);
             // Console.WriteLine("CO2");
             int CO2 = FindRatings(lines_list, 0, gamma_and_epsilon, -1);
-            // Console.WriteLine("O2: "+O2+", CO2: "+CO2);
+            Console.WriteLine("O2: "+O2+", CO2: "+CO2);
             return O2*CO2;
         }
 
@@ -66,7 +66,6 @@ namespace AdventOfCode
                         total_list[i] += 1;
                     }
                 }
-
             }
             
             string[] gamma_array = new string[lines[0].ToCharArray().Length];
@@ -147,8 +146,12 @@ namespace AdventOfCode
                     new_list.Add(line);
                 }
             }
-            // Console.WriteLine();
+            
             string[] new_GE = GammaEpsilonString(new_list);
+            // Console.WriteLine();
+            // Console.WriteLine("Gamma: "+new_GE[0]);
+            // Console.WriteLine("Epsilon: "+new_GE[1]);
+            // Console.WriteLine();
             return FindRatings(new_list, currentBit + 1, new_GE, mult);
         }
     }
