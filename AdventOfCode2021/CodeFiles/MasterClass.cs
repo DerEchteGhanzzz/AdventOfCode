@@ -19,7 +19,7 @@ namespace AdventOfCode
             
             output.Add(Day_0.solution_A);
             output.Add(Day_0.solution_B);
-
+            
             output.Add("Day 1 A: " + Day_1.solution_A);
             output.Add("ms: " + stopWatch.Elapsed.TotalMilliseconds);
             output.Add("Day 1 B: " + Day_1.solution_B);
@@ -53,6 +53,11 @@ namespace AdventOfCode
             output.Add("Day 7 A: " + Day_7.solution_A);
             output.Add("ms: " + stopWatch.Elapsed.TotalMilliseconds);
             output.Add("Day 7 B: " + Day_7.solution_B);
+            output.Add("ms: " + stopWatch.Elapsed.TotalMilliseconds);
+            
+            output.Add("Day 8 A: " + Day_8.solution_A);
+            output.Add("ms: " + stopWatch.Elapsed.TotalMilliseconds);
+            output.Add("Day 8 B: " + Day_8.solution_B);
             output.Add("ms: " + stopWatch.Elapsed.TotalMilliseconds);
             
             stopWatch.Stop();
