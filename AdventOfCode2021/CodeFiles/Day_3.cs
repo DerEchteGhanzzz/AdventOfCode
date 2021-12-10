@@ -44,7 +44,7 @@ namespace AdventOfCode
             int O2 = FindRatings(lines_list, 0, gamma_and_epsilon, 1);
             // Console.WriteLine("CO2");
             int CO2 = FindRatings(lines_list, 0, gamma_and_epsilon, -1);
-            Console.WriteLine("O2: "+O2+", CO2: "+CO2);
+            // Console.WriteLine("O2: "+O2+", CO2: "+CO2);
             return O2*CO2;
         }
 

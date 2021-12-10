@@ -115,35 +115,14 @@ namespace AdventOfCode
                     possibilitySet.Add('d');
                     possibilitySet.Add('f');
                     return possibilitySet;
-                case 5:
-                    possibilitySet.Add('a');
-                    possibilitySet.Add('b');
-                    possibilitySet.Add('c');
-                    possibilitySet.Add('d');
-                    possibilitySet.Add('e');
-                    possibilitySet.Add('f');
-                    possibilitySet.Add('g');
-                    return possibilitySet;
-                case 6:
-                    possibilitySet.Add('a');
-                    possibilitySet.Add('b');
-                    possibilitySet.Add('c');
-                    possibilitySet.Add('d');
-                    possibilitySet.Add('e');
-                    possibilitySet.Add('f');
-                    possibilitySet.Add('g');
-                    return possibilitySet;
-                case 7:
-                    possibilitySet.Add('a');
-                    possibilitySet.Add('b');
-                    possibilitySet.Add('c');
-                    possibilitySet.Add('d');
-                    possibilitySet.Add('e');
-                    possibilitySet.Add('f');
-                    possibilitySet.Add('g');
-                    return possibilitySet;
                 default:
-                    Console.WriteLine("ERROR!");
+                    possibilitySet.Add('a');
+                    possibilitySet.Add('b');
+                    possibilitySet.Add('c');
+                    possibilitySet.Add('d');
+                    possibilitySet.Add('e');
+                    possibilitySet.Add('f');
+                    possibilitySet.Add('g');
                     return possibilitySet;
             }
 
@@ -199,21 +178,8 @@ namespace AdventOfCode
             
             foreach (string digit in OutputDigitArr)
             {
-                
-                Dictionary<char, HashSet<char>> digitSegmentMap = new Dictionary<char, HashSet<char>>()
-                {
-                    {'0', new HashSet<char>(){'a', 'b', 'c', 'e', 'f', 'g'}},
-                    //{'1', new HashSet<char>(){'c', 'f'}},
-                    {'2', new HashSet<char>(){'a', 'c', 'd', 'e', 'g'}},
-                    {'3', new HashSet<char>(){'a', 'c', 'd', 'f', 'g'}},
-                    //{'4', new HashSet<char>(){'b', 'c', 'd', 'f'}},
-                    {'5', new HashSet<char>(){'a', 'b', 'd', 'f', 'g'}},
-                    {'6', new HashSet<char>(){'a', 'b', 'd', 'e', 'f', 'g'}},
-                    //{'7', new HashSet<char>(){'a', 'c', 'f'}},
-                    //{'8', new HashSet<char>(){'a', 'b', 'c', 'd', 'e', 'f', 'g'}},
-                    {'9', new HashSet<char>(){'a', 'b', 'c', 'd', 'f', 'g'}},
-                };
-                
+
+                Dictionary<char, HashSet<char>> digitSegmentMap = new Dictionary<char, HashSet<char>>();
                 switch (digit.Length)
                 {
                     case 2:
@@ -229,15 +195,16 @@ namespace AdventOfCode
                         digitStream = digitStream + "8";
                         break;
                     case 5:
-                        digitSegmentMap.Remove('0');
-                        digitSegmentMap.Remove('6');
-                        digitSegmentMap.Remove('9');
+                        digitSegmentMap.Add('2', new HashSet<char>(){'a', 'c', 'd', 'e', 'g'});
+                        digitSegmentMap.Add('3', new HashSet<char>(){'a', 'c', 'd', 'f', 'g'});
+                        digitSegmentMap.Add('5', new HashSet<char>(){'a', 'b', 'd', 'f', 'g'});
                         digitStream = digitStream + MatchSegments(digitSegmentMap, connectionDict, digit);
                         break;
                     case 6:
-                        digitSegmentMap.Remove('2');
-                        digitSegmentMap.Remove('3');
-                        digitSegmentMap.Remove('5');
+                        digitSegmentMap.Add('0', new HashSet<char>(){'a', 'b', 'c', 'e', 'f', 'g'});
+                        digitSegmentMap.Add('6', new HashSet<char>(){'a', 'b', 'd', 'e', 'f', 'g'});
+                        digitSegmentMap.Add('9', new HashSet<char>(){'a', 'b', 'c', 'd', 'f', 'g'});
+                        
                         digitStream = digitStream + MatchSegments(digitSegmentMap, connectionDict, digit);
                         break;
                 }

@@ -60,6 +60,16 @@ namespace AdventOfCode
             output.Add("Day 8 B: " + Day_8.solution_B);
             output.Add("ms: " + stopWatch.Elapsed.TotalMilliseconds);
             
+            output.Add("Day 9 A: " + Day_9.solution_A);
+            output.Add("ms: " + stopWatch.Elapsed.TotalMilliseconds);
+            output.Add("Day 9 B: " + Day_9.solution_B);
+            output.Add("ms: " + stopWatch.Elapsed.TotalMilliseconds);
+            
+            output.Add("Day 10 A: " + Day_10.solution_A);
+            output.Add("ms: " + stopWatch.Elapsed.TotalMilliseconds);
+            output.Add("Day 10 B: " + Day_10.solution_B);
+            output.Add("ms: " + stopWatch.Elapsed.TotalMilliseconds);
+            
             stopWatch.Stop();
             output.Add("total ms: " + stopWatch.Elapsed.TotalMilliseconds);
 
