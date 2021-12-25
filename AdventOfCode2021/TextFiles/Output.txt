@@ -1,9 +1,47 @@
-Day 0 A: Lets Save Christmas
-Day 0 B: Solutions:
+Lets Save Christmas
+Solutions:
 Day 1 A: 1139
+ms: 28.0652
 Day 1 B: 1103
+ms: 28.8178
 Day 2 A: 1804520
+ms: 33.4901
 Day 2 B: 1971095320
+ms: 34.2456
 Day 3 A: 852500
+ms: 42.5822
 Day 3 B: 1007985
-ms: 0.0139
+ms: 45.0276
+Day 4 A: 25410
+ms: 63.8794
+Day 4 B: 2730
+ms: 84.6979
+Day 5 A: 4993
+ms: 137.3635
+Day 5 B: 21101
+ms: 236.7528
+Day 6 A: 387413
+ms: 251.0181
+Day 6 B: 3802744325814
+ms: 251.2791
+Day 7 A: 343441
+ms: 325.5213
+Day 7 B: 98925151
+ms: 358.9089
+Day 8 A: 303
+ms: 364.0307
+Day 8 B: 961734
+ms: 392.1243
+Day 9 A: 528
+ms: 401.2896
+Day 9 B: 920448
+ms: 409.1988
+Day 10 A: 266301
+ms: 420.9728
+Day 10 B: 3404870164
+ms: 423.3572
+Day 11 A: 1749
+ms: 429.9688
+Day 11 B: 285
+ms: 432.2838
+total ms: 432.2856

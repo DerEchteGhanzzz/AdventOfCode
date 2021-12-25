@@ -11,10 +11,8 @@ namespace AdventOfCode
     public class Day_9
     {
         private static Parser p = new Parser("9");
-        public static int solution_A = solve_A();
-        public static int solution_B = solve_B();
-        
-        private static int solve_A()
+
+        public static int solve_A()
         {
             int total = 0;
             var lines = p.Lines;
@@ -29,7 +27,7 @@ namespace AdventOfCode
             return total;
         }
         
-        private static int solve_B()
+        public static int solve_B()
         {
             var lines = p.Lines;
 

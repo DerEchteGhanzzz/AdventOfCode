@@ -9,10 +9,8 @@ namespace AdventOfCode
     public class Day_7
     {
         private static Parser p = new Parser("7");
-        public static long solution_A = solve_A();
-        public static long solution_B = solve_B();
-        
-        private static long solve_A()
+
+        public static long solve_A()
         {
             var lines = p.Lines;
 
@@ -47,7 +45,7 @@ namespace AdventOfCode
             return min;
         }
         
-        private static long solve_B()
+        public static long solve_B()
         {
             var lines = p.Lines;
 

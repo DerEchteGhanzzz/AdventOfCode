@@ -10,16 +10,13 @@ namespace AdventOfCode
     {
         private static Parser p = new Parser("6");
 
-        public static long solution_A = solve_A();
-        public static long solution_B = solve_B();
-
-        private static long solve_A()
+        public static long solve_A()
         {
             string[] lines = p.Lines;
             return FishGoFuck(lines, 80);
         }
 
-        private static long solve_B()
+        public static long solve_B()
         {
             string[] lines = p.Lines;
             return FishGoFuck(lines, 265);

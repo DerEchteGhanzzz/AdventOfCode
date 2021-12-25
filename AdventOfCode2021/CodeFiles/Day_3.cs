@@ -8,10 +8,7 @@ namespace AdventOfCode
     public class Day_3
     {
         private static Parser p = new Parser("3");
-        public static int solution_A = solve_A();
-        public static int solution_B = solve_B();
-        
-        private static int solve_A()
+        public static int solve_A()
         {
             var lines = p.Lines;
             List<string> lines_list = new List<string>();
@@ -29,7 +26,7 @@ namespace AdventOfCode
             return gamma*epsilon;
         }
         
-        private static int solve_B()
+        public static int solve_B()
         {
             var lines = p.Lines;
             List<string> lines_list = new List<string>();

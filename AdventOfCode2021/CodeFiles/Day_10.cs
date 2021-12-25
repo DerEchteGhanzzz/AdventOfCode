@@ -10,10 +10,8 @@ namespace AdventOfCode
     public class Day_10
     {
         private static Parser p = new Parser("10");
-        public static int solution_A = solve_A();
-        public static long solution_B = solve_B();
-        
-        private static int solve_A()
+
+        public static int solve_A()
         {
             var lines = p.Lines;
             int total = 0;
@@ -63,7 +61,7 @@ namespace AdventOfCode
             return total;
         }
         
-        private static long solve_B()
+        public static long solve_B()
         {
             var lines = p.Lines;
             var incompleteLines = RemoveCorruptedLines(lines);

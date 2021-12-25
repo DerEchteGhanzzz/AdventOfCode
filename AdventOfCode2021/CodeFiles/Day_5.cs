@@ -8,10 +8,8 @@ namespace AdventOfCode
     public class Day_5
     {
         private static Parser p = new Parser("5");
-        public static int solution_A = solve_A();
-        public static int solution_B = solve_B();
-        
-        private static int solve_A()
+
+        public static int solve_A()
         {
             var lines = p.Lines;
             List<List<int[]>> coordList = LinesToVents(lines, true);
@@ -23,7 +21,7 @@ namespace AdventOfCode
             return CountOverlap(coordList);;
         }
         
-        private static int solve_B()
+        public static int solve_B()
         {
             var lines = p.Lines;
             List<List<int[]>> coordList = LinesToVents(lines, false);
